@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">BatterySaver — Smart Power Monitor for macOS</title>
+  <desc id="desc">macOS Menu Bar utility for real-time power telemetry, 20%–80% battery cycle protection, thermal guard, and dynamic USB-C adapter pairing.</desc>
+
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16"/>
+      <stop offset="50%" stop-color="#0E1626"/>
+      <stop offset="100%" stop-color="#0B101D"/>
+    </linearGradient>
+    <radialGradient id="cyan-glow" cx="80%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blue-glow" cx="15%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#151D2F"/>
+      <stop offset="100%" stop-color="#0F1726"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="24" fill="url(#bg-grad)"/>
+  <rect width="1200" height="420" rx="24" fill="url(#cyan-glow)"/>
+  <rect width="1200" height="420" rx="24" fill="url(#blue-glow)"/>
+  <rect width="1200" height="420" rx="24" fill="none" stroke="#223049" stroke-width="1.5"/>
+
+  <!-- LEFT COLUMN: Identity & Core Value -->
+  <g id="identity" transform="translate(64, 48)">
+    <!-- Platform Badge -->
+    <rect width="268" height="28" rx="14" fill="#142036" stroke="#2E4369" stroke-width="1"/>
+    <circle cx="16" cy="14" r="5" fill="#30D158"/>
+    <text x="30" y="18" fill="#93C5FD" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.8">MACOS 13+ · SWIFT &amp; SWIFTUI</text>
+
+    <!-- Project Title -->
+    <text x="0" y="82" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">BatterySaver</text>
+
+    <!-- Tagline -->
+    <text x="0" y="118" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="17" font-weight="500">Smart macOS Power Telemetry &amp; Battery Cycle Guard</text>
+    <text x="0" y="142" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="14.5" font-weight="400">Low-level IOKit monitoring without root or sudo privileges.</text>
+
+    <!-- Feature Pillars -->
+    <g transform="translate(0, 172)">
+      <!-- Feature 1 -->
+      <g transform="translate(0, 0)">
+        <circle cx="10" cy="10" r="9" fill="#064E3B" stroke="#059669" stroke-width="1.5"/>
+        <circle cx="10" cy="10" r="4.5" fill="#30D158"/>
+        <text x="32" y="14" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Strict 3-Color Status</text>
+        <text x="180" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">🟢 Optimal · 🟠 Cable Action · 🔴 Overheat</text>
+      </g>
+
+      <!-- Feature 2 -->
+      <g transform="translate(0, 36)">
+        <circle cx="10" cy="10" r="9" fill="#1E3A8A" stroke="#2563EB" stroke-width="1.5"/>
+        <path d="M10 4 L6 11 L10 11 L9 16 L14 9 L10 9 Z" fill="#60A5FA"/>
+        <text x="32" y="14" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Dynamic Adapter Sizing</text>
+        <text x="200" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Workload-aware 35W / 45W / 65W / 96W</text>
+      </g>
+
+      <!-- Feature 3 -->
+      <g transform="translate(0, 72)">
+        <circle cx="10" cy="10" r="9" fill="#431407" stroke="#EA580C" stroke-width="1.5"/>
+        <path d="M10 5 C8.5 5 8 6.5 8 8.5 C8 11.5 10 14 10 14 C10 14 12 11.5 12 8.5 C12 6.5 11.5 5 10 5 Z" fill="#FB923C"/>
+        <text x="32" y="14" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Cell Longevity Guard</text>
+        <text x="186" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">20%–80% cycle target &amp; thermal runaway cutoff</text>
+      </g>
+    </g>
+
+    <!-- Metadata Badges -->
+    <g transform="translate(0, 298)">
+      <rect x="0" y="0" width="108" height="26" rx="6" fill="#141E33" stroke="#263859" stroke-width="1"/>
+      <text x="12" y="17" fill="#CBD5E1" font-family="ui-monospace, monospace" font-size="12">macOS 13+</text>
+
+      <rect x="118" y="0" width="102" height="26" rx="6" fill="#141E33" stroke="#263859" stroke-width="1"/>
+      <text x="130" y="17" fill="#CBD5E1" font-family="ui-monospace, monospace" font-size="12">AppleSilicon</text>
+
+      <rect x="230" y="0" width="94" height="26" rx="6" fill="#141E33" stroke="#263859" stroke-width="1"/>
+      <text x="242" y="17" fill="#CBD5E1" font-family="ui-monospace, monospace" font-size="12">Zero Root</text>
+
+      <rect x="334" y="0" width="92" height="26" rx="6" fill="#141E33" stroke="#263859" stroke-width="1"/>
+      <text x="346" y="17" fill="#CBD5E1" font-family="ui-monospace, monospace" font-size="12">Native C</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Simulated macOS Menu Bar & Live HUD Popover -->
+  <g id="macos-interface" transform="translate(680, 24)" filter="url(#shadow)">
+    <!-- Menu Bar Strip -->
+    <g id="menubar-strip">
+      <rect x="0" y="0" width="460" height="34" rx="8" fill="#182236" stroke="#2C3D5E" stroke-width="1"/>
+      <!-- Apple Logo Placeholder (compact) -->
+      <path d="M22 17 C22 13 24 11 24 11 C23 10 21 10 20 11 C18 12 17 12 16 11 C14 10 12 11 11 13 C9 16 10 21 13 25 C14.5 26.5 16 26.5 17 26 C18 25.5 19.5 25.5 21 26 C22.5 26.5 23.5 25 24 24 C21.5 23 21.5 19.5 22 17 Z M19 9 C20 7.8 20 6.5 19.8 6 C18.7 6.2 17.5 7 17 8 C16.5 8.8 16.5 10 17 10.3 C18 10.5 18.5 9.8 19 9 Z" fill="#94A3B8" transform="scale(0.7) translate(10, 3)"/>
+      <text x="44" y="21" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">Finder</text>
+      <text x="96" y="21" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">File</text>
+      <text x="130" y="21" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">Edit</text>
+
+      <!-- BatterySaver Menu Bar Item (Active) -->
+      <g transform="translate(300, 4)">
+        <rect width="148" height="26" rx="6" fill="#1E2E4A" stroke="#3B82F6" stroke-width="1"/>
+        <circle cx="14" cy="13" r="4.5" fill="#30D158"/>
+        <text x="25" y="17" fill="#FFFFFF" font-family="ui-monospace, monospace" font-size="12" font-weight="700">18.4W / 35W</text>
+      </g>
+    </g>
+
+    <!-- HUD Popover Card -->
+    <g id="popover-card" transform="translate(70, 42)">
+      <!-- Card Body -->
+      <rect width="390" height="326" rx="14" fill="url(#card-grad)" stroke="#2B3E60" stroke-width="1.5"/>
+
+      <!-- Header -->
+      <circle cx="24" cy="24" r="5" fill="#30D158"/>
+      <text x="38" y="28" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14.5" font-weight="700">Power Monitor</text>
+      <rect x="290" y="14" width="76" height="20" rx="10" fill="#064E3B" stroke="#059669" stroke-width="1"/>
+      <text x="302" y="28" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">🟢 Optimal</text>
+
+      <line x1="16" y1="44" x2="374" y2="44" stroke="#1F2E47" stroke-width="1"/>
+
+      <!-- Telemetry Rows -->
+      <g transform="translate(20, 56)">
+        <!-- Row 1: Battery Level -->
+        <g transform="translate(0, 0)">
+          <text x="0" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Battery Level:</text>
+          <text x="310" y="14" fill="#34D399" font-family="ui-monospace, monospace" font-size="13" font-weight="700" text-anchor="end">78%</text>
+        </g>
+
+        <!-- Row 2: Power Adapter -->
+        <g transform="translate(0, 24)">
+          <text x="0" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Power Adapter:</text>
+          <text x="310" y="14" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="13" font-weight="700" text-anchor="end">35 W</text>
+        </g>
+
+        <!-- Row 3: Mac Consumption -->
+        <g transform="translate(0, 48)">
+          <text x="0" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Mac Consumption:</text>
+          <text x="310" y="14" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="13" font-weight="700" text-anchor="end">18.4 W</text>
+        </g>
+
+        <!-- Row 4: Sustained Workload -->
+        <g transform="translate(0, 72)">
+          <text x="0" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Sustained Workload:</text>
+          <text x="310" y="14" fill="#CBD5E1" font-family="ui-monospace, monospace" font-size="12" text-anchor="end">19.1 W (Stable ↗)</text>
+        </g>
+
+        <!-- Row 5: Battery Flow -->
+        <g transform="translate(0, 96)">
+          <text x="0" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Battery Flow:</text>
+          <text x="310" y="14" fill="#30D158" font-family="ui-monospace, monospace" font-size="13" font-weight="700" text-anchor="end">+14.2 W</text>
+        </g>
+
+        <!-- Row 6: Battery Temp -->
+        <g transform="translate(0, 120)">
+          <text x="0" y="14" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Battery Temp:</text>
+          <text x="310" y="14" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="13" font-weight="700" text-anchor="end">31.2 °C (Safe)</text>
+        </g>
+      </g>
+
+      <!-- Status Banner -->
+      <g transform="translate(16, 204)">
+        <rect width="358" height="54" rx="8" fill="#064E3B" fill-opacity="0.5" stroke="#059669" stroke-width="1"/>
+        <circle cx="18" cy="18" r="4.5" fill="#30D158"/>
+        <text x="30" y="17" fill="#6EE7B7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">STATUS RECOMMENDATION</text>
+        <text x="30" y="38" fill="#ECFDF5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600">35W adapter is well-matched to current load.</text>
+      </g>
+
+      <!-- Bottom Actions -->
+      <line x1="16" y1="274" x2="374" y2="274" stroke="#1F2E47" stroke-width="1"/>
+      <g transform="translate(16, 286)">
+        <rect x="0" y="0" width="70" height="24" rx="5" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="16" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">↻ Check</text>
+
+        <rect x="230" y="0" width="70" height="24" rx="5" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="240" y="16" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">⚙ Settings</text>
+
+        <rect x="306" y="0" width="52" height="24" rx="5" fill="#3B1219" stroke="#7F1D1D" stroke-width="1"/>
+        <text x="317" y="16" fill="#F87171" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">⏻ Quit</text>
+      </g>
+    </g>
+  </g>
+</svg>

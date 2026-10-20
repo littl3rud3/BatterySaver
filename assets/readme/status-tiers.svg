@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="status-title status-desc">
+  <title id="status-title">BatterySaver Three-Tier Status Indicator System</title>
+  <desc id="status-desc">Diagram showing Green Optimal, Orange Cable Action, and Red Critical Overheating or Power Mismatch states.</desc>
+
+  <defs>
+    <linearGradient id="tier-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E1626"/>
+      <stop offset="100%" stop-color="#090E1A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="1200" height="280" rx="20" fill="url(#tier-bg)" stroke="#1F2E47" stroke-width="1.5"/>
+
+  <!-- Section Header Inside Card -->
+  <g transform="translate(48, 32)">
+    <text x="0" y="0" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700">Strict 3-Color Traffic Light Status Architecture</text>
+    <text x="0" y="22" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Deterministic state machine providing zero-guesswork power decisions for macOS.</text>
+  </g>
+
+  <!-- Card 1: Green (Optimal) -->
+  <g transform="translate(48, 80)">
+    <rect width="344" height="170" rx="12" fill="#0C1D1B" stroke="#059669" stroke-width="1.2"/>
+    <!-- Header -->
+    <circle cx="24" cy="24" r="7" fill="#10B981"/>
+    <text x="40" y="28" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700">Optimal (No Action)</text>
+    <rect x="252" y="14" width="76" height="20" rx="4" fill="#064E3B"/>
+    <text x="264" y="28" fill="#6EE7B7" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">NORMAL</text>
+
+    <line x1="16" y1="46" x2="328" y2="46" stroke="#064E3B" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <text x="18" y="72" fill="#ECFDF5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600">• Healthy Battery Zone:</text>
+    <text x="26" y="90" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Operating on battery between 22% – 80%.</text>
+
+    <text x="18" y="118" fill="#ECFDF5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600">• Well-Matched Charger:</text>
+    <text x="26" y="136" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Adapter wattage comfortably covers system load + headroom reserve.</text>
+  </g>
+
+  <!-- Card 2: Orange (Cable Action) -->
+  <g transform="translate(428, 80)">
+    <rect width="344" height="170" rx="12" fill="#201509" stroke="#D97706" stroke-width="1.2"/>
+    <!-- Header -->
+    <circle cx="24" cy="24" r="7" fill="#F59E0B"/>
+    <text x="40" y="28" fill="#FBBF24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700">Cable Action (Cycle)</text>
+    <rect x="238" y="14" width="90" height="20" rx="4" fill="#451A03"/>
+    <text x="248" y="28" fill="#FCD34D" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">20% / 80%</text>
+
+    <line x1="16" y1="46" x2="328" y2="46" stroke="#451A03" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <text x="18" y="72" fill="#FFFBEB" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600">• Upper Limit Reached (≥ 80%):</text>
+    <text x="26" y="90" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Time to disconnect charger to avoid chemical degradation at high state of charge.</text>
+
+    <text x="18" y="118" fill="#FFFBEB" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600">• Lower Threshold Dropped (≤ 21%):</text>
+    <text x="26" y="136" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Time to plug in your recommended adapter (e.g. 35W or 45W) to avoid deep discharge.</text>
+  </g>
+
+  <!-- Card 3: Red (Critical / Overheating) -->
+  <g transform="translate(808, 80)">
+    <rect width="344" height="170" rx="12" fill="#240D11" stroke="#DC2626" stroke-width="1.2"/>
+    <!-- Header -->
+    <circle cx="24" cy="24" r="7" fill="#EF4444"/>
+    <text x="40" y="28" fill="#F87171" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700">Warning / Overheat</text>
+    <rect x="250" y="14" width="78" height="20" rx="4" fill="#450A0A"/>
+    <text x="260" y="28" fill="#FCA5A5" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">URGENT</text>
+
+    <line x1="16" y1="46" x2="328" y2="46" stroke="#450A0A" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <text x="18" y="72" fill="#FEF2F2" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600">• Thermal Guard (&gt; 40°C limit):</text>
+    <text x="26" y="90" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Surfaces 🔥 41°C warning &amp; alert notification. Anti-flicker 1°C hysteresis.</text>
+
+    <text x="18" y="118" fill="#FEF2F2" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600">• Wattage Deficit / Excess:</text>
+    <text x="26" y="136" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Discharging while connected (deficit) or unnecessarily huge adapter (excess).</text>
+  </g>
+</svg>

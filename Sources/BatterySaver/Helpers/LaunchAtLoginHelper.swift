@@ -1,0 +1,30 @@
+import Foundation
+import ServiceManagement
+
+public enum LaunchAtLoginHelper {
+    public static var isEnabled: Bool {
+        if #available(macOS 13.0, *) {
+            return SMAppService.mainApp.status == .enabled
+        }
+        return false
+    }
+    
+    public static func setEnabled(_ enabled: Bool) {
+        if #available(macOS 13.0, *) {
+            do {
+                if enabled {
+                    if SMAppService.mainApp.status != .enabled {
+                        try SMAppService.mainApp.register()
+                    }
+                } else {
+                    if SMAppService.mainApp.status == .enabled {
+                        try SMAppService.mainApp.unregister()
+                    }
+                }
+            } catch {
+                // If the app is not running from a .app bundle, register() returns requiresApproval or throws an error
+                print("[LaunchAtLogin] Could not update registration: \(error.localizedDescription)")
+            }
+        }
+    }
+}

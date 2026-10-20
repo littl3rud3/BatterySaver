@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C82BFA2E88B23846CAAD1F /* BatterySaverApp.swift in Build */ = {isa = PBXBuildFile; fileRef = 00649C740569640443CCBBEA /* BatterySaverApp.swift */; };
+		00C9D87154DBEC0C4D53893E /* PowerMetrics.swift in Build */ = {isa = PBXBuildFile; fileRef = 006538DDBFA311EB4952AA0E /* PowerMetrics.swift */; };
+		00CAB4533C2C02454F1BBB2D /* BarState.swift in Build */ = {isa = PBXBuildFile; fileRef = 00662EB4632C867A49CD9026 /* BarState.swift */; };
+		00CB93F6A7E200124308AA88 /* PowerReader.swift in Build */ = {isa = PBXBuildFile; fileRef = 006710DB0567DA794BDDA851 /* PowerReader.swift */; };
+		00CC21F840FC9BF447CF86CD /* PowerMonitor.swift in Build */ = {isa = PBXBuildFile; fileRef = 00680F8E06655C4C4D4994B7 /* PowerMonitor.swift */; };
+		00CD73151027EE2E4ADCA97F /* NotificationManager.swift in Build */ = {isa = PBXBuildFile; fileRef = 00693B2A967BCDD948DE9427 /* NotificationManager.swift */; };
+		00CEC29E782320D44EDDB9F4 /* SettingsStore.swift in Build */ = {isa = PBXBuildFile; fileRef = 006A4AF327D88C8640918D6D /* SettingsStore.swift */; };
+		00CF4E9AD110F5C948AC899C /* MenuBarExtraView.swift in Build */ = {isa = PBXBuildFile; fileRef = 006B0AAD2739E3F0404E8EBC /* MenuBarExtraView.swift */; };
+		00D0CB381F6B17914EC4B7D0 /* SettingsView.swift in Build */ = {isa = PBXBuildFile; fileRef = 006CDCE1C3341ECB4A08AE4C /* SettingsView.swift */; };
+		00D19AD6A8D1BC07418E9EAC /* LaunchAtLoginHelper.swift in Build */ = {isa = PBXBuildFile; fileRef = 006DECA8923E7A1D4C968DC3 /* LaunchAtLoginHelper.swift */; };
+		00D291ECDE4E1A394F3EB0FD /* SettingsWindowController.swift in Build */ = {isa = PBXBuildFile; fileRef = 006E87936CBEA0344CDD897A /* SettingsWindowController.swift */; };
+		00D491ECDE4E1A394F3EB0FE /* StatusBarController.swift in Build */ = {isa = PBXBuildFile; fileRef = 006F87936CBEA0344CDD897B /* StatusBarController.swift */; };
+		00D3B9AC87C142E44725AB75 /* AppIcon.icns in Build */ = {isa = PBXBuildFile; fileRef = 006FAB5802F6BDD242388FD3 /* AppIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00146AEF5A6F928348B2BEDC /* BatterySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatterySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00649C740569640443CCBBEA /* BatterySaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/BatterySaverApp.swift"; sourceTree = "<group>"; };
+		006538DDBFA311EB4952AA0E /* PowerMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Models/PowerMetrics.swift"; sourceTree = "<group>"; };
+		00662EB4632C867A49CD9026 /* BarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Models/BarState.swift"; sourceTree = "<group>"; };
+		006710DB0567DA794BDDA851 /* PowerReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Services/PowerReader.swift"; sourceTree = "<group>"; };
+		00680F8E06655C4C4D4994B7 /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Services/PowerMonitor.swift"; sourceTree = "<group>"; };
+		00693B2A967BCDD948DE9427 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Services/NotificationManager.swift"; sourceTree = "<group>"; };
+		006A4AF327D88C8640918D6D /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Services/SettingsStore.swift"; sourceTree = "<group>"; };
+		006B0AAD2739E3F0404E8EBC /* MenuBarExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Views/MenuBarExtraView.swift"; sourceTree = "<group>"; };
+		006CDCE1C3341ECB4A08AE4C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Views/SettingsView.swift"; sourceTree = "<group>"; };
+		006DECA8923E7A1D4C968DC3 /* LaunchAtLoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Helpers/LaunchAtLoginHelper.swift"; sourceTree = "<group>"; };
+		006E87936CBEA0344CDD897A /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Helpers/SettingsWindowController.swift"; sourceTree = "<group>"; };
+		006F87936CBEA0344CDD897B /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BatterySaver/Helpers/StatusBarController.swift"; sourceTree = "<group>"; };
+		006FAB5802F6BDD242388FD3 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Sources/BatterySaver/Resources/AppIcon.icns"; sourceTree = "<group>"; };
+		00705A80C2E826B84AD99FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0013EB28AFA03BB44D4A8600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000999E5128DB04847FF873D = {
+			isa = PBXGroup;
+			children = (
+				000ABB36D67596014119B784 /* Sources */,
+				000F161C76B7EDAB409B8B72 /* Resources */,
+				00705A80C2E826B84AD99FCF /* Info.plist */,
+				0010B703B33FDC63416DA8D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0010B703B33FDC63416DA8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00146AEF5A6F928348B2BEDC /* BatterySaver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000ABB36D67596014119B784 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				00649C740569640443CCBBEA /* BatterySaverApp.swift */,
+				000BB18C73B972EE44BCB945 /* Models */,
+				000C55D32A1F807F48B8B82C /* Services */,
+				000D95FF74A05E0A4EF28947 /* Views */,
+				000E06AEDFA4FE35472A90A3 /* Helpers */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		000BB18C73B972EE44BCB945 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				006538DDBFA311EB4952AA0E /* PowerMetrics.swift */,
+				00662EB4632C867A49CD9026 /* BarState.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		000C55D32A1F807F48B8B82C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				006710DB0567DA794BDDA851 /* PowerReader.swift */,
+				00680F8E06655C4C4D4994B7 /* PowerMonitor.swift */,
+				00693B2A967BCDD948DE9427 /* NotificationManager.swift */,
+				006A4AF327D88C8640918D6D /* SettingsStore.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		000D95FF74A05E0A4EF28947 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				006B0AAD2739E3F0404E8EBC /* MenuBarExtraView.swift */,
+				006CDCE1C3341ECB4A08AE4C /* SettingsView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		000E06AEDFA4FE35472A90A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				006DECA8923E7A1D4C968DC3 /* LaunchAtLoginHelper.swift */,
+				006E87936CBEA0344CDD897A /* SettingsWindowController.swift */,
+				006F87936CBEA0344CDD897B /* StatusBarController.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		000F161C76B7EDAB409B8B72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				006FAB5802F6BDD242388FD3 /* AppIcon.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000209423142A90E4C00ADF9 /* BatterySaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000430BE00E05B664D58AD40 /* Build configuration list for PBXNativeTarget "BatterySaver" */;
+			buildPhases = (
+				00110344E6F821D6451695E1 /* Sources */,
+				001227D16445F4B34D438C4B /* Resources */,
+				0013EB28AFA03BB44D4A8600 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BatterySaver";
+			productName = "BatterySaver";
+			productReference = 00146AEF5A6F928348B2BEDC /* BatterySaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0001BC28D024B1074916A5D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					000209423142A90E4C00ADF9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 00032C4DD29331434FD7AE01 /* Build configuration list for PBXProject "BatterySaver" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000999E5128DB04847FF873D;
+			productRefGroup = 0010B703B33FDC63416DA8D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000209423142A90E4C00ADF9 /* BatterySaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		001227D16445F4B34D438C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D3B9AC87C142E44725AB75 /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00110344E6F821D6451695E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C82BFA2E88B23846CAAD1F /* BatterySaverApp.swift in Sources */,
+				00C9D87154DBEC0C4D53893E /* PowerMetrics.swift in Sources */,
+				00CAB4533C2C02454F1BBB2D /* BarState.swift in Sources */,
+				00CB93F6A7E200124308AA88 /* PowerReader.swift in Sources */,
+				00CC21F840FC9BF447CF86CD /* PowerMonitor.swift in Sources */,
+				00CD73151027EE2E4ADCA97F /* NotificationManager.swift in Sources */,
+				00CEC29E782320D44EDDB9F4 /* SettingsStore.swift in Sources */,
+				00CF4E9AD110F5C948AC899C /* MenuBarExtraView.swift in Sources */,
+				00D0CB381F6B17914EC4B7D0 /* SettingsView.swift in Sources */,
+				00D19AD6A8D1BC07418E9EAC /* LaunchAtLoginHelper.swift in Sources */,
+				00D291ECDE4E1A394F3EB0FD /* SettingsWindowController.swift in Sources */,
+				00D491ECDE4E1A394F3EB0FE /* StatusBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0005398C0A9037044FE2BD87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000625623078B30F4A6D9BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = "wholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		00077B73276294084AFE8EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qrappainc.BatterySaverApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0008394944201F994A49B666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qrappainc.BatterySaverApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00032C4DD29331434FD7AE01 /* Build configuration list for PBXProject "BatterySaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0005398C0A9037044FE2BD87 /* Debug */,
+				000625623078B30F4A6D9BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000430BE00E05B664D58AD40 /* Build configuration list for PBXNativeTarget "BatterySaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00077B73276294084AFE8EB3 /* Debug */,
+				0008394944201F994A49B666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 0001BC28D024B1074916A5D7 /* Project object */;
+}

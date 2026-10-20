@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="headroom-title headroom-desc">
+  <title id="headroom-title">Power Headroom Reserve &amp; Dynamic Sizing Mechanism</title>
+  <desc id="headroom-desc">Diagram explaining the safety headroom margin calculation and adapter sizing across 35W, 45W, 65W, and 96W USB-C chargers.</desc>
+
+  <defs>
+    <linearGradient id="hr-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E1626"/>
+      <stop offset="100%" stop-color="#090E1A"/>
+    </linearGradient>
+    <linearGradient id="safe-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="headroom-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="20" fill="url(#hr-bg)" stroke="#1F2E47" stroke-width="1.5"/>
+
+  <!-- Left: Header & Formula -->
+  <g transform="translate(48, 36)">
+    <text x="0" y="0" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700">Dynamic Power Headroom Reserve Formula</text>
+    <text x="0" y="24" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Prevents running chargers at thermal maximum, leaving overhead for battery charging &amp; transient CPU/GPU spikes.</text>
+
+    <!-- Formula Box -->
+    <g transform="translate(0, 48)">
+      <rect width="460" height="84" rx="10" fill="#141E33" stroke="#253754" stroke-width="1"/>
+      <text x="18" y="28" fill="#93C5FD" font-family="ui-monospace, monospace" font-size="12.5" font-weight="600">Headroom = max(6.0W, AdapterWatts × 16%)</text>
+      <text x="18" y="52" fill="#34D399" font-family="ui-monospace, monospace" font-size="12.5" font-weight="600">Max Safe Load = AdapterWatts - Headroom</text>
+      <text x="18" y="72" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Default margin: 16% (Configurable in Settings: 12%, 16%, 20%, 25%)</text>
+    </g>
+
+    <!-- Real Scenario Callout -->
+    <g transform="translate(0, 148)">
+      <rect width="460" height="74" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="22" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">💡 REAL-TIME ADAPTIVE EXAMPLE:</text>
+      <text x="16" y="44" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">• At 37W load: comfortably within 45W limit (37.8W) → Recommends <tspan fill="#34D399" font-weight="700">45W</tspan></text>
+      <text x="16" y="62" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">• At 44W load: exceeds 45W safe limit → Seamlessly prompts <tspan fill="#60A5FA" font-weight="700">65W</tspan></text>
+    </g>
+  </g>
+
+  <!-- Right: Visual Adapter Bars -->
+  <g transform="translate(560, 40)">
+    <text x="0" y="0" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Adapter Power Allocation (Safe System Load vs Headroom)</text>
+
+    <!-- Legend -->
+    <g transform="translate(360, -12)">
+      <rect x="0" y="0" width="12" height="12" rx="3" fill="#10B981"/>
+      <text x="18" y="10" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Safe Load</text>
+
+      <rect x="110" y="0" width="12" height="12" rx="3" fill="#F59E0B"/>
+      <text x="128" y="10" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Reserve</text>
+    </g>
+
+    <!-- 35W Adapter -->
+    <g transform="translate(0, 24)">
+      <text x="0" y="18" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="13" font-weight="700">35W</text>
+      <!-- Safe Bar: 29W out of 96W max scale (scale: 580px for 96W, ~6px per W) -->
+      <rect x="50" y="4" width="174" height="22" rx="4" fill="url(#safe-bar)"/>
+      <text x="137" y="19" fill="#FFFFFF" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">29.0W Safe</text>
+      <!-- Headroom: 6W -->
+      <rect x="226" y="4" width="36" height="22" rx="4" fill="url(#headroom-bar)"/>
+      <text x="244" y="19" fill="#000000" font-family="ui-monospace, monospace" font-size="9.5" font-weight="700" text-anchor="middle">6W</text>
+      <text x="272" y="19" fill="#64748B" font-family="ui-monospace, monospace" font-size="11">Total: 35W</text>
+    </g>
+
+    <!-- 45W Adapter -->
+    <g transform="translate(0, 68)">
+      <text x="0" y="18" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="13" font-weight="700">45W</text>
+      <!-- Safe Bar: 37.8W -->
+      <rect x="50" y="4" width="226" height="22" rx="4" fill="url(#safe-bar)"/>
+      <text x="163" y="19" fill="#FFFFFF" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">37.8W Safe</text>
+      <!-- Headroom: 7.2W -->
+      <rect x="278" y="4" width="44" height="22" rx="4" fill="url(#headroom-bar)"/>
+      <text x="300" y="19" fill="#000000" font-family="ui-monospace, monospace" font-size="9.5" font-weight="700" text-anchor="middle">7.2W</text>
+      <text x="332" y="19" fill="#64748B" font-family="ui-monospace, monospace" font-size="11">Total: 45W</text>
+    </g>
+
+    <!-- 65W Adapter -->
+    <g transform="translate(0, 112)">
+      <text x="0" y="18" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="13" font-weight="700">65W</text>
+      <!-- Safe Bar: 54.6W -->
+      <rect x="50" y="4" width="327" height="22" rx="4" fill="url(#safe-bar)"/>
+      <text x="213" y="19" fill="#FFFFFF" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">54.6W Safe</text>
+      <!-- Headroom: 10.4W -->
+      <rect x="379" y="4" width="63" height="22" rx="4" fill="url(#headroom-bar)"/>
+      <text x="410" y="19" fill="#000000" font-family="ui-monospace, monospace" font-size="9.5" font-weight="700" text-anchor="middle">10.4W</text>
+      <text x="452" y="19" fill="#64748B" font-family="ui-monospace, monospace" font-size="11">Total: 65W</text>
+    </g>
+
+    <!-- 96W Adapter -->
+    <g transform="translate(0, 156)">
+      <text x="0" y="18" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="13" font-weight="700">96W</text>
+      <!-- Safe Bar: 80.6W -->
+      <rect x="50" y="4" width="483" height="22" rx="4" fill="url(#safe-bar)"/>
+      <text x="291" y="19" fill="#FFFFFF" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">80.6W Safe</text>
+      <!-- Headroom: 15.4W -->
+      <rect x="535" y="4" width="93" height="22" rx="4" fill="url(#headroom-bar)"/>
+      <text x="581" y="19" fill="#000000" font-family="ui-monospace, monospace" font-size="9.5" font-weight="700" text-anchor="middle">15.4W</text>
+      <text x="638" y="19" fill="#64748B" font-family="ui-monospace, monospace" font-size="11">Total: 96W</text>
+    </g>
+
+    <!-- Axis line -->
+    <line x1="50" y1="190" x2="628" y2="190" stroke="#334155" stroke-width="1"/>
+    <text x="50" y="206" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">0W</text>
+    <text x="210" y="206" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">25W</text>
+    <text x="360" y="206" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">50W</text>
+    <text x="510" y="206" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">75W</text>
+    <text x="628" y="206" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">96W+</text>
+  </g>
+</svg>
